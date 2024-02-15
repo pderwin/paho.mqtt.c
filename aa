@@ -1,0 +1,15 @@
+#!/bin/sh
+
+BUILD=./build
+
+# rm -rf $BUILD
+
+if [ ! -d $BUILD ] ; then
+    cmake -B $BUILD .
+fi
+
+cmake --build $BUILD
+
+date
+set-title done
+countdown 86400
