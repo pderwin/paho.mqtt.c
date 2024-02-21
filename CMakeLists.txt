@@ -53,7 +53,7 @@ SET(PAHO_BUILD_DEB_PACKAGE   FALSE CACHE BOOL "Build debian package")
 SET(PAHO_ENABLE_TESTING      FALSE CACHE BOOL "Build tests and run")
 SET(PAHO_ENABLE_CPACK        TRUE  CACHE BOOL "Enable CPack")
 SET(PAHO_HIGH_PERFORMANCE    FALSE CACHE BOOL "Disable tracing and heap tracking")
-SET(PAHO_USE_SELECT          FALSE CACHE BOOL "Revert to select system call instead of poll")
+SET(PAHO_USE_SELECT          TRUE  CACHE BOOL "Revert to select system call instead of poll")
 
 IF (PAHO_HIGH_PERFORMANCE)
   ADD_DEFINITIONS(-DHIGH_PERFORMANCE=1)
